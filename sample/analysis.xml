@@ -1,0 +1,33 @@
+﻿<i>
+  <!--
+    sc 为SuperChat
+    gift为礼物
+    guard为上船
+
+    attribute "raw" 为原始数据
+  -->
+
+  <!--
+    ref: 黑月流苏. https://zhidao.baidu.com/question/1430448163912263499.html
+
+    p="
+      video time in sec (%.3f),
+      danmu type: [1 - scroll, 4 - bottom],
+      text size: [25 - normal],
+      text color,
+      unix timestamp,
+      danmu poll: [0 - normal],
+      uid,
+      row id for history use
+    " 
+    user="sent username" 
+    raw="raw content"
+  
+    content
+  -->
+  <d p="t,x,x,x,x,x,x,x" user="x" raw="x"><!-- content --></d>
+  <gift ts="t" user="x" giftname="gn" giftcount="gc" raw="x" />
+  <sc ts="t" user="x" price="x" time="x" raw="x"><!-- content --></sc>
+  <guard ts="t" user="x" level="x" count="x" raw="x" />
+
+</i>
