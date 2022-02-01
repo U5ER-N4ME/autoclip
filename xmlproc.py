@@ -104,7 +104,10 @@ def getFragment(timeStat, minlen = 30, maxmerge = 9):
                     pass
         else:
             # try to start
-            status = True
+            if timeList[index+1] - timeList[index] > maxmerge:
+                pass # isolated call
+            else:
+                status = True
             tmpTimeStart = timeList[index]
     
     log(1, 'fragmentCollect: ', fragmentCollect)
