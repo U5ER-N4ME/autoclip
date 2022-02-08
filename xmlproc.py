@@ -110,6 +110,21 @@ def getFragment(timeStat, minlen = 30, maxmerge = 9):
                 status = True
             tmpTimeStart = timeList[index]
     
+    # last index
+    index = index + 1
+    if status == True:
+        # force end current fragment
+        status = False
+        tmpTimeStop = timeList[index]
+        if tmpTimeStop - tmpTimeStart > minlen:
+            fragmentCollect.append([tmpTimeStart, tmpTimeStop])
+        else: 
+            # too short, abandoned
+            pass
+    else:
+        # the last timestamp, do not start any new fragment
+        pass
+
     log(1, 'fragmentCollect: ', fragmentCollect)
     log(2, len(fragmentCollect), ' fragment(s) extracted')
     return fragmentCollect

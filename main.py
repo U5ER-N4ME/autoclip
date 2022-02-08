@@ -10,7 +10,7 @@ if __name__ == "__main__":
     '''
 
     # input file
-    fileName = sys.argv[1].split('.')
+    fileName = sys.argv[1].rsplit('.', 1)
     log(2, 'input file: ', fileName[0] + '.' + fileName[1])
     log(2, 'input file ext: ', fileName[1])
 

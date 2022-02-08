@@ -1,5 +1,4 @@
 import os
-from turtle import st
 # import subprocess
 from log import log
 
@@ -10,5 +9,3 @@ def clip(fin, start, end, fout):
     # while p.poll() == None:
     #     pass
     log(0, 'video clipped: ', start, '-', end, ' to file ', fout)
-
-
