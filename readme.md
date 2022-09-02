@@ -6,7 +6,7 @@ A util to clip according to call danmu.
 
 # How to use
 
-1. Install python, ffmpeg, and add them to path
+1. Install Python, FFmpeg, and add them to path
 
 2. Download this repository to your local storage
 
@@ -28,7 +28,7 @@ A util to clip according to call danmu.
 
 + main.py: main file. 
 
-+ vidproc.py: use ffmpeg to process video. 
++ vidproc.py: use FFmpeg to process video. 
 
 + xmlproc.py: xml file process. 
 
@@ -38,9 +38,11 @@ A util to clip according to call danmu.
 
 The numbers following each term is the version used during development
 
-+ python (3.9.10)
++ [Python](https://www.python.org/) (3.9.10)
 
-+ ffmpeg (4.2.2)
++ [FFmpeg](https://ffmpeg.org/) (4.2.2)
+
+Newer versions should work properly but not tested. 
 
 ---
 
